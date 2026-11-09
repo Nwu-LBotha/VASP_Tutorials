@@ -1,0 +1,35 @@
+# General settings
+SYSTEM = FeO magnetic calculation
+
+PREC   = Accurate
+ENCUT  = 520
+EDIFF  = 1E-6
+
+# Structural relaxation
+IBRION = 2
+ISIF   = 3
+NSW    = 100
+EDIFFG = -0.02
+
+# Electronic minimisation
+ALGO   = Normal
+
+# Electronic smearing
+ISMEAR = 0
+SIGMA  = 0.05
+
+# Spin polarisation
+ISPIN  = 2
+MAGMOM = 2*5.0 2*0.0
+
+# DFT+U
+LDAU      = .TRUE.
+LDAUTYPE  = 2
+LDAUL     = 2 -1
+LDAUU     = 4.0 0.0
+LDAUJ     = 0.0 0.0
+
+# Additional settings
+LORBIT   = 11
+LASPH    = .TRUE.
+LMAXMIX  = 4

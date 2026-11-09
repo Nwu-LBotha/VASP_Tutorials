@@ -1,0 +1,28 @@
+SYSTEM = bcc Fe AFM
+
+# Electronic minimisation
+PREC   = Accurate
+ENCUT  = 520
+EDIFF  = 1E-6
+
+# Structural relaxation
+IBRION = 2
+ISIF   = 3
+NSW    = 100
+EDIFFG = -0.02
+
+# Electronic smearing
+ISMEAR = 1
+SIGMA  = 0.2
+
+# Spin polarisation
+ISPIN  = 2
+MAGMOM = 2.5 -2.5
+
+# Magnetic moment analysis
+LORBIT = 11
+LASPH  = .TRUE.
+
+# Start from scratch
+ISTART = 0
+ICHARG = 2
